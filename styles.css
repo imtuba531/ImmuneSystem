@@ -1,0 +1,97 @@
+
+body {
+  background-color: #443199;
+  font-family: 'Story Script', sans-serif;
+  color: #FFF4E1;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.ui-link-box {
+  text-decoration: none;
+  color: #FFF4E1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  border-radius: 15px;
+  min-height: 140px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.ui-link-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  filter: brightness(1.1);
+}
+
+.center-title-box {
+  grid-column: span 2;
+  background-color: #C13383;
+  cursor: default;
+  min-height: auto;
+  padding: 40px;
+}
+.center-title-box:hover {
+  transform: none;
+}
+.center-title-box h1 {
+  font-family: 'Black Ops One', sans-serif;
+  font-size: 3rem;
+  margin: 0 0 15px 0;
+}
+.center-title-box h2 {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-top: 15px;
+  border-top: 1px solid rgba(255,244,225,0.3);
+  padding-top: 15px;
+}
+
+.skibidi-box {
+  background-color: #792CA2;
+}
+
+
+.redirect-box {
+  background-color: #E05454;
+}
+
+
+.ui-link-box .hover-text {
+  display: none;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.ui-link-box .normal-text {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.ui-link-box:hover .normal-text {
+  display: none;
+}
+.ui-link-box:hover .hover-text {
+  display: block;
+}
+
+.center-title-box .hover-view-title { display: none; font-size: 1rem; line-height: 1.6; }
+.center-title-box:hover .default-view-title { display: none; }
+.center-title-box:hover .hover-view-title { display: block; }
